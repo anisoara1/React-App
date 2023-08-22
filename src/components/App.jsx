@@ -1,3 +1,10 @@
+import Button from './Button/Button';
+import Sidebar from './Sidebar/Sidebar';
+import Card from './Card/Card';
+import Paper from './Paper/Paper';
+import Tutor from './Tutor/Tutor';
+/* import CitiesList from './CitiesList'; */
+
 export const App = () => {
   return (
     <div
@@ -7,10 +14,14 @@ export const App = () => {
         justifyContent: 'center',
         alignItems: 'center',
         fontSize: 40,
-        color: '#010101'
+        color: '#010101',
       }}
     >
-      React homework template
+      <Tutor />
+      <Paper />
+      <Card />
+      <Sidebar />
+      <Button />
     </div>
   );
 };
