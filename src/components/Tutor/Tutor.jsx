@@ -12,11 +12,15 @@ export default function Tutor({
 }) {
   return (
     <div className={css.tutor}>
-      <p>{firstName}</p>
-      <p>{lastName}</p>
-      <p>{phone}</p>
-      <p>{email}</p>
-      <p>{city}</p>
+      <div>
+        <p>{firstName}</p>
+        <p>{lastName}</p>
+      </div>
+      <div>
+        <p>{phone}</p>
+        <p>{email}</p>
+        <p>{city}</p>
+      </div>
       <p>{options}</p>
     </div>
   );
