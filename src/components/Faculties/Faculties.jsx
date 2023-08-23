@@ -12,7 +12,7 @@ export default function Faculties({ faculties }) {
     <div className={css.faculties}>
       <h1>Faculties</h1>
       <div>
-        {faculties.map((faculty, index) => {
+        {faculties?.map((faculty, index) => {
           return (
             <Paper key={index}>
               <InfoBlock info={faculty.name} />

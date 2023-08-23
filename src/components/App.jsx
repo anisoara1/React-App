@@ -1,18 +1,12 @@
-import Button from './Button/Button';
 import Sidebar from './Sidebar/Sidebar';
-import Card from './Card/Card';
-import Paper from './Paper/Paper';
-import TutorForm from './TutorForm/TutorForm';
-import Tutors from './Tutors/Tutors';
-import Tutor from './Tutor/Tutor';
-/* import CitiesList from './CitiesList'; */
-
+import Main from './Main/Main';
 export const App = () => {
   return (
     <div
       style={{
         height: '100vh',
         display: 'flex',
+        flexDirection: 'row',
         justifyContent: 'center',
         alignItems: 'center',
         fontSize: 40,
@@ -20,14 +14,8 @@ export const App = () => {
       }}
     >
       {' '}
-      <Tutor />
-      <Tutors />
-      <TutorForm />
-      <Tutor />
-      <Paper />
-      <Card />
       <Sidebar />
-      <Button />
+      <Main />
     </div>
   );
 };
